@@ -16,7 +16,7 @@ SELECTED_FEATURES = [
 BEST_PARAMS = {
     'class_weight': None,
     'max_iter': 400,
-    'l1_ratio': 1,          # equivalent to penalty='l1' (deprecated in sklearn 1.8+)
+    'l1_ratio': 1, 
     'solver': 'saga',
     'tol': 0.1,
 }
