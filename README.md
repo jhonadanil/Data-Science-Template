@@ -8,37 +8,19 @@ módulos independientes, cada uno trabajando un tipo de problema distinto
 ```
 .
 ├── A.- Regression                  
-│   ├── data/
-│   ├── notebooks/
+│   ├── data/                     # Dataset
+│   ├── notebooks/                # Carpeta principal
 │   │   ├── 1.- EDA.ipynb
 │   │   ├── 2.- seleccion.ipynb
 │   │   └── 3.- busqueda.ipynb
-│   ├── preprocessing/
-│   └── src/
-├── B.- Clasificacion               
-│   ├── data/
-│   ├── notebooks/
-│   │   ├── 1.- EDA.ipynb
-│   │   ├── 2.- Seleccion.ipynb
-│   │   └── 3.- Busqueda.ipynb
-│   ├── preprocessing/
-│   └── src/
-├── C.- Clustering                  
-│   ├── data/
-│   ├── notebooks/
-│   │   ├── 1.- EDA.ipynb
-│   │   ├── 2.- seleccion.ipynb
-│   │   └── 3.- busqueda.ipynb
-│   ├── preprocessing/
-│   └── src/
-├── D.- Deteccion-de-anomalias      
-│   ├── notebooks/
-│   │   ├── 1.- EDA.ipynb
-│   │   ├── 2.- seleccion.ipynb
-│   │   └── 3.- busqueda.ipynb
-│   ├── preprocessing/
-│   ├── scripts/
-│   └── src/
+│   ├── preprocessing/            # Código de preprocesamiento
+│   └── src/                      # Código fuente (solo config.py)
+├── B.- Clasificacion/           
+
+├── C.- Clustering/                  
+
+├── D.- Deteccion-de-anomalias/      
+
 ├── README.md
 └── requirements.txt
 ```
