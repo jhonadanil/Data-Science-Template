@@ -1,36 +1,80 @@
-# ML-Template
+# ML-Template 🧠
 
-Proyecto personal de práctica de Data science y Machine Learning. Contiene cuatro módulos independientes, cada uno trabajando un tipo de problema distinto
-con datasets clásicos.
+Proyecto personal de práctica de Data science y Machine Learning. Cuatro
+módulos independientes, cada uno trabajando un tipo de problema distinto
 
-### A · Regresión
+## Estructura 📁
 
-Predicción del valor mediano de viviendas en Bosto
+```
+.
+├── A.- Regression                  
+│   ├── data/
+│   ├── notebooks/
+│   │   ├── 1.- EDA.ipynb
+│   │   ├── 2.- seleccion.ipynb
+│   │   └── 3.- busqueda.ipynb
+│   ├── preprocessing/
+│   └── src/
+├── B.- Clasificacion               
+│   ├── data/
+│   ├── notebooks/
+│   │   ├── 1.- EDA.ipynb
+│   │   ├── 2.- Seleccion.ipynb
+│   │   └── 3.- Busqueda.ipynb
+│   ├── preprocessing/
+│   └── src/
+├── C.- Clustering                  
+│   ├── data/
+│   ├── notebooks/
+│   │   ├── 1.- EDA.ipynb
+│   │   ├── 2.- seleccion.ipynb
+│   │   └── 3.- busqueda.ipynb
+│   ├── preprocessing/
+│   └── src/
+├── D.- Deteccion-de-anomalias      
+│   ├── notebooks/
+│   │   ├── 1.- EDA.ipynb
+│   │   ├── 2.- seleccion.ipynb
+│   │   └── 3.- busqueda.ipynb
+│   ├── preprocessing/
+│   ├── scripts/
+│   └── src/
+├── README.md
+└── requirements.txt
+```
 
-### B · Clasificación
+### A · Regresión 🏠
 
-Clasificación binaria de tumores de mama como malignos o benignos 
+Predicción del valor mediano de viviendas en Boston.
 
-### C · Clustering
+### B · Clasificación 🩺
 
-Análisis exploratorio de segmentación de clientes de un centro
-comercial 
+Clasificación binaria de tumores de mama como malignos o benignos.
 
-### D · Detección de anomalías
+### C · Clustering 🛒
 
-Detección de transacciones fraudulentas con tarjetas de crédito sobre un dataset altamente desbalanceado (0.17%
-de fraudes). Incluye script para descargar el dataset desde Kaggle y
-generar una muestra balanceada.
+Análisis exploratorio de segmentación de clientes de un centro comercial.
 
-## Setup
+### D · Detección de anomalías 💳
+
+Detección de transacciones fraudulentas con tarjetas de crédito sobre un
+dataset altamente desbalanceado (0.17% de fraudes). Incluye script para
+descargar el dataset desde Kaggle y generar una muestra balanceada.
+
+## Setup ⚙️
 
 ```bash
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Uso
+## Uso 🚀
 
-Cada módulo tiene notebooks en su carpeta `notebooks/` que documentan
-el flujo completo (EDA, feature selection, modelado, evaluación) y
-scripts reutilizables de division de datos, preprocesamiento, limpieza y configuracion para un futuro src.
+Cada módulo sigue el mismo flujo de 3 notebooks:
+
+1. **EDA** 🔍 — Análisis exploratorio de datos
+2. **seleccion** 🧹 — Preprocesamiento y selección de características
+3. **busqueda** 🎯 — Búsqueda de hiperparámetros, entrenamiento y evaluación
+
+Además, `preprocessing/` y `src/` contienen scripts reutilizables de
+limpieza, división de datos y configuración.
